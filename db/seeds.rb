@@ -2,7 +2,7 @@ kari = User.create(name: 'Kari', hometown: 'Denver', avatar: 'https://cdn3.iconf
 
 elvis = User.create(name: 'Elvis', hometown: 'Denver', avatar: 'https://image.flaticon.com/icons/svg/145/145843.svg')
 
-Recommendation.create(location: 'Denver', category: 'Restaurants', name: 'D Bar', notes: 'upscale desserts and drinks', url: "https://www.dbardenver.com/", image: 'https://images1.westword.com/imager/u/original/7046443/d_bar_food.jpg', recommended_by: 'Kyle', user: kari)
+Recommendation.create(location: 'Denver', category: 'Restaurants', name: 'D Bar', notes: 'upscale desserts and drinks', url: "https://www.dbardenver.com/", image: 'https://images1.westword.com/imager/u/original/7046443/d_bar_food.jpg', latitude: 39.7460178, longitude: -104.9814925, recommended_by: 'Kyle', user: kari)
 
 Recommendation.create(location: 'Denver', category: 'Restaurants', name: 'La Casitas', notes: 'best tamales in Denver', url: "http://www.tamalesbylacasita.net/", image: 'http://www.tamalesbylacasita.net/images/tamaleplate4.png', recommended_by: 'Ben', user: kari)
 

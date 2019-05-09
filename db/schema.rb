@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_06_165459) do
+ActiveRecord::Schema.define(version: 2019_05_09_173318) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,10 +23,11 @@ ActiveRecord::Schema.define(version: 2019_05_06_165459) do
     t.string "url"
     t.string "image"
     t.string "recommended_by"
-    t.string "coordinates"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "latitude"
+    t.decimal "longitude"
     t.index ["user_id"], name: "index_recommendations_on_user_id"
   end
 
